@@ -11,6 +11,9 @@ return {
         unusedparams = true,
       },
       staticcheck = true,
+	  codelenses = {
+          gc_details = true,
+      }
     },
   },
 }
