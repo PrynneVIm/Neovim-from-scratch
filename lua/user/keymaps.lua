@@ -43,6 +43,10 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("n", "H", "^", opts)
 keymap("n", "L", "$", opts)
 
+-- 重命名元素
+keymap('n', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
+keymap('v', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
+
 -- Insert --
 -- Press jk fast to exit insert mode 
 keymap("i", "jk", "<ESC>", opts)
