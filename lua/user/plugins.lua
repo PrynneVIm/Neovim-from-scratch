@@ -95,6 +95,9 @@ return packer.startup(function(use)
   -- Translator
   use "voldikss/vim-translator"
 
+  -- Tagbar
+  use "preservim/tagbar"
+
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
   use { "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" }
