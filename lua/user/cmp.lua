@@ -104,6 +104,7 @@ cmp.setup {
         nvim_lsp = "[LSP]",
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
+        look = "[Dict]",
         path = "[Path]",
       })[entry.source.name]
       return vim_item
@@ -114,6 +115,16 @@ cmp.setup {
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
+    {
+      name = 'look',
+      priority = 1,
+      keyword_length = 2,
+      option = {
+        convert_case = true,
+        loud = true
+        --dict = '/usr/share/dict/words'
+      }
+    },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
