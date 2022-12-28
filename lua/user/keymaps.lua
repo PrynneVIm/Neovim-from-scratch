@@ -39,13 +39,12 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
--- 快速移动
-keymap("n", "H", "^", opts)
-keymap("n", "L", "$", opts)
-
 -- 重命名元素
-keymap('n', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
-keymap('v', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
+keymap('n', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', opts)
+keymap('v', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', opts)
+
+-- 快速翻译 需要安装translator插件
+keymap('n', '<leader>x', ":TranslateW<CR>", opts)
 
 -- Insert --
 -- Press jk fast to exit insert mode 
