@@ -43,9 +43,6 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap('n', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', opts)
 keymap('v', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', opts)
 
--- 快速翻译 需要安装translator插件
-keymap('n', '<leader>x', ":TranslateW<CR>", opts)
-
 -- TagbarToggle
 keymap('n', '<F8>', ":TagbarToggle<CR>", opts)
 
