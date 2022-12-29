@@ -98,6 +98,12 @@ return packer.startup(function(use)
   -- Translator
   use "voldikss/vim-translator"
 
+  -- TODO list
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+  }
+
   -- Tagbar
   use "preservim/tagbar"
 
