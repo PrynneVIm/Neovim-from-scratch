@@ -15,6 +15,10 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
+-- 是否开启Spell建议cmp
+vim.opt.spell = false
+vim.opt.spelllang = { 'en_us' }
+
 --   פּ ﯟ   some other good icons
 local kind_icons = {
   Text = "",
@@ -104,6 +108,7 @@ cmp.setup {
         nvim_lsp = "[LSP]",
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
+        spell = "[Spell]",
         path = "[Path]",
       })[entry.source.name]
       return vim_item
@@ -114,6 +119,15 @@ cmp.setup {
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
+    {
+      name = 'spell',
+      option = {
+        keep_all_entries = false,
+        enable_in_context = function()
+            return true
+        end,
+      },
+    },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
