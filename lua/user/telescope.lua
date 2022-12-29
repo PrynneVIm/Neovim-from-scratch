@@ -94,3 +94,6 @@ telescope.setup {
     -- please take a look at the readme of the extension you want to configure
   },
 }
+
+-- 开启telescope显示环境变量插件
+require('telescope').load_extension('env')
