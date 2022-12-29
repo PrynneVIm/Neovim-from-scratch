@@ -87,6 +87,16 @@ return packer.startup(function(use)
 	use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
   use { "LinArcX/telescope-env.nvim" }
 
+  -- 快速定位单词和某一行
+  use {
+    'phaazon/hop.nvim',
+    branch = 'v2', -- optional but strongly recommended
+    config = function()
+      -- you can configure Hop the way you like here; see :h hop-config
+      require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+    end
+  }
+
 	-- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",

@@ -43,6 +43,10 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap('n', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', opts)
 keymap('v', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', opts)
 
+-- 快速定位单词
+keymap('n', '<leader><leader>w', '<cmd>HopWord<cr>', opts)
+keymap('n', '<leader><leader>a', '<cmd>HopAnywhere<cr>', opts)
+
 -- TagbarToggle
 keymap('n', '<F8>', ":TagbarToggle<CR>", opts)
 
