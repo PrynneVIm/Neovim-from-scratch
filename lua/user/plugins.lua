@@ -94,6 +94,7 @@ return packer.startup(function(use)
 	}
 	use "p00f/nvim-ts-rainbow"
 	use "nvim-treesitter/playground"
+  use "m-demare/hlargs.nvim"
 
   -- Translator
   use "voldikss/vim-translator"
