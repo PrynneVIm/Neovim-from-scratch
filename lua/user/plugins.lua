@@ -98,6 +98,9 @@ return packer.startup(function(use)
   -- Translator
   use "voldikss/vim-translator"
 
+  -- 多光标操作
+  use "mg979/vim-visual-multi"
+
   -- TODO list
   use {
     "folke/todo-comments.nvim",
