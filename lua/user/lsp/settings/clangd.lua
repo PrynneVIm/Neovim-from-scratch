@@ -1,18 +1,13 @@
-local capabilities = require("user.lsp.handlers").capabilities
-capabilities.offsetEncoding = { "utf-16" }
-local opts = {
-	capabilities = capabilities,
-	on_attach = function(client, bufnr)
-		local lspComm = require("user.lsp.handlers")
-		lspComm.keyAttach(bufnr)
-		-- lspComm.shwLinDiaAtom(bufnr)
-		-- lspComm.hlSymUdrCursor(client, bufnr)
-		-- lspComm.disableFormat(client)
-	end,
-	handlers = require("user.lsp.handlers").handlers,
-}
+local util = require "lspconfig/util"
+
+local root_pattern = util.root_pattern("compile_commands.json", "compile_flags.txt", ".git")
+
 return {
-	on_setup = function(server)
-		server.setup(opts)
-	end,
+  cmd = {"clangd", "--background-index"};
+  filetypes = {"c", "cpp", "objc", "objcpp"};
+  root_dir = function(fname)
+    local filename = util.path.is_absolute(fname) and fname
+      or util.path.join(vim.loop.cwd(), fname)
+    return root_pattern(filename) or util.path.dirname(filename)
+  end;
 }
