@@ -137,7 +137,7 @@ return packer.startup(function(use)
   -- GitHub Copilot
   use "github/copilot.vim"
 
-  -- 调试
+  -- debugger
   use { "puremourning/vimspector" }
 
 	-- Go
