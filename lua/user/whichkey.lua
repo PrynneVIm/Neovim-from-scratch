@@ -97,6 +97,24 @@ local mappings = {
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["x"] = { "<cmd>TranslateW<cr>", "Translate" },
 
+  d = {
+    name = "Debugger",
+    b = { ":call vimspector#ToggleBreakpoint()<CR>", "设置断点" },
+    B = { "<Plug>VimspectorBreakpoints", "查看所有断点" },
+    c = { ":call vimspector#Continue()<CR>", "继续调试" },
+    d = { ":call vimspector#Launch()<CR>", "开始调试" },
+    D = { "<Plug>VimspectorDisassemble", "打开反汇编窗口" },
+    e = { ":call vimspector#Reset()<CR>", "结束调试" },
+    i = { "<Plug>VimspectorBalloonEval", "查看变量内容" },
+    j = { "<Plug>VimspectorStepOver", "stepOver" },
+    k = { "<Plug>VimspectorStepOut", "stepOut" },
+    l = { "<Plug>VimspectorStepInto", "stepInto" },
+    r = { "<Plug>VimspectorRunToCursor", "运行到鼠标所在位置" },
+    p = { "<Plug>VimspectorPause", "暂停调试" },
+    -- keymap('n', '<leader><F11>', '<Plug>VimspectorUpFrame', opts)
+    -- keymap('n', '<leader><F12>', '<Plug>VimspectorDownFrame', opts)
+  },
+
   p = {
     name = "Packer",
     c = { "<cmd>PackerCompile<cr>", "Compile" },
