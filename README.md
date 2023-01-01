@@ -11,8 +11,15 @@ Each video will be associated with a branch so checkout the one you are interest
 Make sure to remove or move your current `nvim` directory
 
 **IMPORTANT** Requires [Neovim v0.8.0](https://github.com/neovim/neovim/releases). Please [upgrade](#upgrade-to-latest-release) if you're on an earlier version. 
+
 ```
-git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
+git clone git@github.com:prynnevim/neovim-from-scratch.git ~/.config/nvim
+```
+
+Windows
+
+```
+git clone git@github.com:prynnevim/neovim-from-scratch.git ~/AppData/Local/nvim
 ```
 
 Run `nvim` and wait for the plugins to be installed. (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
