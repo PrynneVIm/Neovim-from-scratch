@@ -48,7 +48,7 @@ keymap('n', '<leader><leader>w', '<cmd>HopWord<cr>', opts)
 keymap('n', '<leader><leader>a', '<cmd>HopAnywhere<cr>', opts)
 
 -- TagbarToggle
-keymap('n', '<F8>', ":TagbarToggle<CR>", opts)
+-- keymap('n', '<F8>', ":TagbarToggle<CR>", opts)
 
 -- Insert --
 -- Press jk fast to exit insert mode 
