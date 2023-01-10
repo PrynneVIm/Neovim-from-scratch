@@ -1,4 +1,4 @@
-local util = require "lspconfig/util"
+local util = require "lspconfig.util"
 
 local root_pattern = util.root_pattern("compile_commands.json", "compile_flags.txt", ".git")
 
