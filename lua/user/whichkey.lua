@@ -104,7 +104,7 @@ local mappings = {
     -- B = { "<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", "设置断点状态?" },
     d = { "<cmd>lua require'dap'.continue()<CR>", "开始调试" },
     e = { "<cmd>lua require'dap'.terminate()<CR>", "终止调试" },
-    -- e = { "<cmd>lua require'dap'.run_last()<CR>", "结束调试" },
+    E = { "<cmd>lua require'dap'.run_last()<CR>", "运行到末尾" },
     i = { "<cmd>lua require'dapui'.eval()<CR>", "查看变量信息" },
 
     j = { "<cmd>lua require'dap'.step_over()<CR>", "stepOver" },
