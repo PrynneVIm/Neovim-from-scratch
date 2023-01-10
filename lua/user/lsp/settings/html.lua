@@ -1,4 +1,4 @@
-local util = require "lspconfig/util"
+local util = require "lspconfig.util"
 
 local bin_name = 'vscode-html-language-server'
 local cmd = { bin_name, '--stdio' }
