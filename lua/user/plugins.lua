@@ -143,6 +143,18 @@ return packer.startup(function(use)
   use "theHamsta/nvim-dap-virtual-text"
   use "rcarriga/nvim-dap-ui"
   use "nvim-telescope/telescope-dap.nvim"
+  use "vim-test/vim-test"
+  use {
+    "nvim-neotest/neotest",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-neotest/neotest-go",
+      "nvim-neotest/neotest-plenary",
+      "nvim-neotest/neotest-vim-test",
+    }
+  }
 
 	-- Go
 	use {
