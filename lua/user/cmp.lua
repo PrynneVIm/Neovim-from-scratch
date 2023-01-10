@@ -15,10 +15,6 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
--- 是否开启Spell建议cmp
-vim.opt.spell = false
-vim.opt.spelllang = { 'en_us' }
-
 --   פּ ﯟ   some other good icons
 local kind_icons = {
   Text = "",
