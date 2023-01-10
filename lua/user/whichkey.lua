@@ -99,20 +99,20 @@ local mappings = {
 
   d = {
     name = "Debugger",
-    b = { ":call vimspector#ToggleBreakpoint()<CR>", "设置断点" },
-    B = { "<Plug>VimspectorBreakpoints", "查看所有断点" },
-    c = { ":call vimspector#Continue()<CR>", "继续调试" },
-    d = { ":call vimspector#Launch()<CR>", "开始调试" },
-    D = { "<Plug>VimspectorDisassemble", "打开反汇编窗口" },
-    e = { ":call vimspector#Reset()<CR>", "终止调试" },
-    i = { "<Plug>VimspectorBalloonEval", "查看变量内容" },
-    j = { "<Plug>VimspectorStepOver", "stepOver" },
-    k = { "<Plug>VimspectorStepOut", "stepOut" },
-    l = { "<Plug>VimspectorStepInto", "stepInto" },
-    r = { "<Plug>VimspectorRunToCursor", "运行到鼠标所在位置" },
-    p = { "<Plug>VimspectorPause", "暂停调试" },
-    -- keymap('n', '<leader><F11>', '<Plug>VimspectorUpFrame', opts)
-    -- keymap('n', '<leader><F12>', '<Plug>VimspectorDownFrame', opts)
+    b = { "<cmd>lua require'dap'.toggle_breakpoint()<CR>", "设置断点" },
+    B = { "<cmd>lua require'dap'.list_breakpoints()<CR>", "查看所有断点" },
+    -- B = { "<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", "设置断点状态?" },
+    d = { "<cmd>lua require'dap'.continue()<CR>", "开始调试" },
+    e = { "<cmd>lua require'dap'.terminate()<CR>", "终止调试" },
+    -- e = { "<cmd>lua require'dap'.run_last()<CR>", "结束调试" },
+    i = { "<cmd>lua require'dapui'.eval()<CR>", "查看变量信息" },
+
+    j = { "<cmd>lua require'dap'.step_over()<CR>", "stepOver" },
+    k = { "<cmd>lua require'dap'.step_out()<CR>", "stepOut" },
+    l = { "<cmd>lua require'dap'.step_into()<CR>", "stepInto" },
+    r = { "<cmd>lua require'dap'.run_to_cursor()<CR>", "运行到鼠标所在位置" },
+    o = { "<cmd>lua require'dap'.repl.open()<CR>", "打开调试面板" },
+    -- D = { "<Plug>VimspectorDisassemble", "打开反汇编窗口" },
   },
 
   p = {
