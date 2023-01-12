@@ -16,6 +16,12 @@ if not status_ok then
 	return
 end
 
+
+local copilotCmp_status_ok, copilotCmp = pcall(require, "copilot_cmp")
+if not copilotCmp_status_ok then
+	return
+end
+
 copilot.setup({
   panel = {
     enabled = true,
@@ -55,3 +61,11 @@ copilot.setup({
   copilot_node_command = 'node', -- Node.js version must be > 16.x
   server_opts_overrides = {},
 })
+
+
+copilotCmp.setup {
+  method = "getCompletionsCycling",
+}
+
+-- 设置LSP颜色
+vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})

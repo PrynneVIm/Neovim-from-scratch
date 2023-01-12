@@ -42,6 +42,7 @@ local kind_icons = {
   Event = "",
   Operator = "",
   TypeParameter = "",
+  Copilot = "",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
@@ -102,14 +103,14 @@ cmp.setup {
       vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
         nvim_lsp = "[LSP]",
-        emoji = "[Emoji]",
         luasnip = "[Snippet]",
-        cmp_tabnine = "[Tabnine]",
         buffer = "[Buffer]",
-        calc = "[Calc]",
         copilot = "[Copilot]",
+        cmp_tabnine = "[Tabnine]",
+        calc = "[Calc]",
         spell = "[Spell]",
         look = "[Look]",
+        emoji = "[Emoji]",
         path = "[Path]",
       })[entry.source.name]
       return vim_item
