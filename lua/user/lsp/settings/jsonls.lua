@@ -178,6 +178,8 @@ end
 local extended_schemas = extend(schemas, default_schemas)
 
 local opts = {
+  filetypes = { 'json', 'jsonc' },
+  single_file_support = true,
   settings = {
     json = {
       schemas = extended_schemas,
