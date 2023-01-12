@@ -48,7 +48,8 @@ local kind_icons = {
 
 -- 设置LSP颜色
 vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
-vim.api.nvim_set_hl(0, "CmpItemKindSnippet", {fg ="#FFD700"})
+vim.api.nvim_set_hl(0, "CmpItemKindSnippet", {fg ="#FFA500"})
+vim.api.nvim_set_hl(0, "CmpItemKindKeyword", {fg ="#EE82EE"})
 
 cmp.setup {
   snippet = {
