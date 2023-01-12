@@ -66,6 +66,3 @@ copilot.setup({
 copilotCmp.setup {
   method = "getCompletionsCycling",
 }
-
--- 设置LSP颜色
-vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
