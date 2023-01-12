@@ -76,6 +76,13 @@ return packer.startup(function(use)
   use { "octaltree/cmp-look" }
   -- use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
   use {'tzachar/cmp-tabnine', after = "nvim-cmp", run='powershell ./install.ps1', requires = 'hrsh7th/nvim-cmp'}
+  use {
+    "zbirenbaum/copilot-cmp",
+    after = { "copilot.lua" },
+    config = function ()
+      require("copilot_cmp").setup()
+    end
+  }
   use "f3fora/cmp-spell"
 
 	-- Snippets
@@ -141,7 +148,8 @@ return packer.startup(function(use)
   }
 
   -- GitHub Copilot
-  use "github/copilot.vim"
+  -- use "github/copilot.vim"
+  use { "zbirenbaum/copilot.lua" }
 
   -- debugger
   use 'mfussenegger/nvim-dap'
