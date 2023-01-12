@@ -104,6 +104,7 @@ cmp.setup {
         nvim_lsp = "[LSP]",
         emoji = "[Emoji]",
         luasnip = "[Snippet]",
+        cmp_tabnine = "[Tabnine]",
         buffer = "[Buffer]",
         calc = "[Calc]",
         copilot = "[Copilot]",
@@ -130,6 +131,7 @@ cmp.setup {
     },
     { name = 'emoji' },
     { name = "calc" },
+    { name = "cmp_tabnine" },
     {
       name = "copilot",
       -- keyword_length = 0,
