@@ -108,6 +108,7 @@ cmp.setup {
         calc = "[Calc]",
         copilot = "[Copilot]",
         spell = "[Spell]",
+        look = "[Look]",
         path = "[Path]",
       })[entry.source.name]
       return vim_item
@@ -158,6 +159,15 @@ cmp.setup {
           -- "\n",
         },
       },
+    },
+    {
+      name = 'look',
+      keyword_length = 2,
+      option = {
+        convert_case = true,
+        loud = true
+        --dict = '/usr/share/dict/words'
+      }
     },
   },
   confirm_opts = {
