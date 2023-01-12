@@ -72,6 +72,8 @@ return packer.startup(function(use)
 	use { "hrsh7th/cmp-nvim-lsp", commit = "3cf38d9c957e95c397b66f91967758b31be4abe6" }
 	use { "hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21" }
   use { "hrsh7th/cmp-emoji" }
+  use { "hrsh7th/cmp-calc" }
+  use { "octaltree/cmp-look" }
   use "f3fora/cmp-spell"
 
 	-- Snippets

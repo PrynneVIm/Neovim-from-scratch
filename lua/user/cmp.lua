@@ -105,6 +105,7 @@ cmp.setup {
         emoji = "[Emoji]",
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
+        calc = "[Calc]",
         copilot = "[Copilot]",
         spell = "[Spell]",
         path = "[Path]",
@@ -127,6 +128,7 @@ cmp.setup {
       },
     },
     { name = 'emoji' },
+    { name = "calc" },
     {
       name = "copilot",
       -- keyword_length = 0,
