@@ -102,6 +102,7 @@ cmp.setup {
       vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
         nvim_lsp = "[LSP]",
+        emoji = "[Emoji]",
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         copilot = "[Copilot]",
@@ -125,6 +126,7 @@ cmp.setup {
         end,
       },
     },
+    { name = 'emoji' },
     {
       name = "copilot",
       -- keyword_length = 0,
