@@ -3,6 +3,7 @@ if not status_ok then
   return
 end
 
+-- TODO: tiabnine 颜色提示
 tabnine:setup({
 	max_lines = 1000,
 	max_num_results = 20,
