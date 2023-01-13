@@ -63,6 +63,12 @@ copilot.setup({
 })
 
 
+-- TODO: copilot cmp提示 输出格式不正确
 copilotCmp.setup {
   method = "getCompletionsCycling",
+  formatters = {
+    label = require("copilot_cmp.format").format_label_text,
+    insert_text = require("copilot_cmp.format").remove_existing,
+    preview = require("copilot_cmp.format").deindent,
+  },
 }
