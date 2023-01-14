@@ -120,6 +120,17 @@ return packer.startup(function(use)
   -- 空格缩进高亮
   use "lukas-reineke/indent-blankline.nvim"
 
+  -- 快速更改分隔符
+  use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+      require("nvim-surround").setup({
+          -- Configuration here, or leave empty to use defaults
+      })
+    end
+  })
+
 	-- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
