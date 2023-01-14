@@ -109,6 +109,14 @@ return packer.startup(function(use)
     end
   }
 
+  -- 十六进制颜色高亮
+  use {
+    "norcalli/nvim-colorizer.lua",
+    config = function()
+      require'colorizer'.setup()
+    end
+  }
+
 	-- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
