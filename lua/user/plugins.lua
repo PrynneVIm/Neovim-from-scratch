@@ -117,6 +117,9 @@ return packer.startup(function(use)
     end
   }
 
+  -- 空格缩进高亮
+  use "lukas-reineke/indent-blankline.nvim"
+
 	-- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
