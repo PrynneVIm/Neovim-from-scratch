@@ -154,6 +154,7 @@ return packer.startup(function(use)
   use "rcarriga/nvim-dap-ui"
   use "nvim-telescope/telescope-dap.nvim"
   use "vim-test/vim-test"
+  use "leoluz/nvim-dap-go"
   use {
     "nvim-neotest/neotest",
     requires = {
