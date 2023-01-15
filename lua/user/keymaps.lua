@@ -47,13 +47,16 @@ keymap('v', '<leader>re', '<cmd>lua require("renamer").rename()<cr>', opts)
 keymap('n', '<leader><leader>w', '<cmd>HopWord<cr>', opts)
 keymap('n', '<leader><leader>a', '<cmd>HopAnywhere<cr>', opts)
 
+-- 打开文件大纲
+keymap('n', '<leader><leader>t', '<cmd>TagbarToggle<cr>', opts)
+
 -- TagbarToggle
 -- keymap('n', '<F8>', ":TagbarToggle<CR>", opts)
 
 -- Insert --
 -- Press jk fast to exit insert mode 
-keymap("i", "jk", "<ESC>", opts)
-keymap("i", "kj", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "kj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode

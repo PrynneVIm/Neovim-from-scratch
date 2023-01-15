@@ -180,7 +180,7 @@ local mappings = {
   },
 
   m = {
-    name = "markdown",
+    name = "Markdown",
     m = { "<cmd>MarkdownPreview<cr>", "Markdown Preview" },
     e = { "<cmd>MarkdownPreviewStop<cr>", "Markdown Preview Stop" },
     -- p = { "<cmd>MarkdownPreviewToggle<cr>", "Markdown Preview Toggle" },
