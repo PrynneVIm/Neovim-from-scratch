@@ -131,6 +131,16 @@ return packer.startup(function(use)
     end
   })
 
+  -- markdown
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+  use { "dhruvasagar/vim-table-mode" }
+  use "img-paste-devs/img-paste.vim"
+
+
 	-- Treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",

@@ -178,6 +178,16 @@ local mappings = {
       "Workspace Symbols",
     },
   },
+
+  m = {
+    name = "markdown",
+    m = { "<cmd>MarkdownPreview<cr>", "Markdown Preview" },
+    e = { "<cmd>MarkdownPreviewStop<cr>", "Markdown Preview Stop" },
+    -- p = { "<cmd>MarkdownPreviewToggle<cr>", "Markdown Preview Toggle" },
+    t = { "<cmd>TableModeToggle<cr>", "TableMode Toggle" },
+    p = { "<cmd>call mdip#MarkdownClipboardImage()<cr>", "Paste Image" },
+  },
+
   s = {
     name = "Search",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
