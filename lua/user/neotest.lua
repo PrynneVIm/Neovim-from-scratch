@@ -27,8 +27,8 @@ neotest.setup({
     --   args = { "-count=1", "-timeout=60s" }
     -- }),
     require("neotest-plenary"),
-    require("neotest-vim-test")({
-      ignore_file_types = { "python", "vim", "lua" },
-    }),
+    -- require("neotest-vim-test")({
+    --   ignore_file_types = { "python", "vim", "lua" },
+    -- }),
   },
 })
