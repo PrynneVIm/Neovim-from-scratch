@@ -82,6 +82,7 @@ return packer.startup(function(use)
     after = { "copilot.lua" },
   }
   use "f3fora/cmp-spell"
+  use "folke/neodev.nvim"
 
 	-- Snippets
   use { "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" } --snippet engine
@@ -186,8 +187,8 @@ return packer.startup(function(use)
   use "theHamsta/nvim-dap-virtual-text"
   use "rcarriga/nvim-dap-ui"
   use "nvim-telescope/telescope-dap.nvim"
-  use "vim-test/vim-test"
   use "leoluz/nvim-dap-go"
+  use "vim-test/vim-test"
   use {
     "nvim-neotest/neotest",
     requires = {
