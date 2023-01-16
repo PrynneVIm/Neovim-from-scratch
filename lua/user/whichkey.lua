@@ -113,6 +113,19 @@ local mappings = {
     r = { "<cmd>lua require'dap'.run_to_cursor()<CR>", "运行到鼠标所在位置" },
     o = { "<cmd>lua require'dap'.repl.open()<CR>", "打开调试面板" },
     -- D = { "<Plug>VimspectorDisassemble", "打开反汇编窗口" },
+
+    t = {
+      name = "Test",
+      t = { "<cmd>lua require('neotest').summary.toggle()<CR>", "打开测试界面" },
+      r = { "<cmd>lua require('neotest').run.run()<CR>", "Test Function" },
+      f = { "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>", "Test File" },
+      o = { "<cmd>lua require('neotest').output.open()<CR>", "显示执行结果" },
+      -- ds = { "<cmd>lua require('neotest').diagnostic.show()<CR>", "显示诊断槽" },
+      -- dh = { "<cmd>lua require('neotest').diagnostic.hide()<CR>", "隐藏诊断槽" },
+      -- d = { "<cmd>lua require('neotest').diagnostics.toggle()<CR>", "隐藏诊断槽" },
+      -- s = { "<cmd>lua require('neotest').run.stop()<CR>", "停止最近的测试函数" },
+    }
+
   },
 
   p = {
@@ -204,12 +217,13 @@ local mappings = {
     name = "Terminal",
     n = { "<cmd>lua _NODE_TOGGLE()<cr>", "Node" },
     u = { "<cmd>lua _NCDU_TOGGLE()<cr>", "NCDU" },
-    t = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
+    H = { "<cmd>lua _HTOP_TOGGLE()<cr>", "Htop" },
     p = { "<cmd>lua _PYTHON_TOGGLE()<cr>", "Python" },
     f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
     s = { "<cmd>lua _POWERSHELL_TOGGLE()<cr>", "PowerShell" },
+    t = { "<cmd>lua require('neotest').summary.toggle()<CR>", "Test" },
   },
 }
 
