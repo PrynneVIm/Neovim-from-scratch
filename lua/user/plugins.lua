@@ -118,9 +118,6 @@ return packer.startup(function(use)
     end
   }
 
-  -- 空格缩进高亮
-  use "lukas-reineke/indent-blankline.nvim"
-
   -- 快速更改分隔符
   use({
     "kylechui/nvim-surround",
@@ -133,10 +130,10 @@ return packer.startup(function(use)
   })
 
   -- markdown
-  use({
-      "iamcco/markdown-preview.nvim",
-      run = function() vim.fn["mkdp#util#install"]() end,
-  })
+  -- use({
+  --     "iamcco/markdown-preview.nvim",
+  --     run = function() vim.fn["mkdp#util#install"]() end,
+  -- })
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   use { "dhruvasagar/vim-table-mode" }
   use "img-paste-devs/img-paste.vim"
