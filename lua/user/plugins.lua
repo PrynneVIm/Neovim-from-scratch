@@ -138,6 +138,12 @@ return packer.startup(function(use)
   use { "dhruvasagar/vim-table-mode" }
   use "img-paste-devs/img-paste.vim"
 
+  -- Database
+  use "tpope/vim-dadbod"
+  use "kristijanhusak/vim-dadbod-ui"
+  -- cmp自动补全
+  use "kristijanhusak/vim-dadbod-completion"
+
 
 	-- Treesitter
 	use {
