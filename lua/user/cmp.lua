@@ -177,6 +177,7 @@ cmp.setup {
         --dict = '/usr/share/dict/words'
       }
     },
+    { name = 'vim-dadbod-completion' },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
