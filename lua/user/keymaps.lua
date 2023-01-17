@@ -50,6 +50,9 @@ keymap('n', '<leader><leader>a', '<cmd>HopAnywhere<cr>', opts)
 -- 打开文件大纲
 keymap('n', '<leader><leader>t', '<cmd>TagbarToggle<cr>', opts)
 
+-- 打开可视化数据库
+keymap('n', '<leader><leader>d', '<cmd>DBUIToggle<cr>', opts)
+
 -- TagbarToggle
 -- keymap('n', '<F8>', ":TagbarToggle<CR>", opts)
 
