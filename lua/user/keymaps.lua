@@ -48,7 +48,10 @@ keymap('n', '<leader><leader>w', '<cmd>HopWord<cr>', opts)
 keymap('n', '<leader><leader>a', '<cmd>HopAnywhere<cr>', opts)
 
 -- 打开文件大纲
-keymap('n', '<leader><leader>t', '<cmd>TagbarToggle<cr>', opts)
+keymap('n', '<F8>', '<cmd>TagbarToggle<cr>', opts)
+
+-- 打开测试
+keymap('n', '<leader><leader>t', "<cmd>lua require('neotest').summary.toggle()<CR>", opts)
 
 -- 打开可视化数据库
 keymap('n', '<leader><leader>d', '<cmd>DBUIToggle<cr>', opts)

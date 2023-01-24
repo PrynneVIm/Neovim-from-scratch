@@ -224,7 +224,6 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
     s = { "<cmd>lua _POWERSHELL_TOGGLE()<cr>", "PowerShell" },
-    t = { "<cmd>lua require('neotest').summary.toggle()<CR>", "Test" },
   },
 }
 
