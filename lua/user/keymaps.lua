@@ -56,6 +56,9 @@ keymap('n', '<leader><leader>t', "<cmd>lua require('neotest').summary.toggle()<C
 -- 打开可视化数据库
 keymap('n', '<leader><leader>d', '<cmd>DBUIToggle<cr>', opts)
 
+-- 快速分屏
+keymap('n', "<leader>\\", '<cmd>vs<cr>', opts)
+
 -- TagbarToggle
 -- keymap('n', '<F8>', ":TagbarToggle<CR>", opts)
 
