@@ -1,0 +1,8 @@
+require "user.core.autocommands"
+require "user.core.gitsigns"
+require "user.core.impatient"
+require "user.core.options"
+require "user.core.project"
+require "user.core.telescope"
+require "user.core.todolist"
+require "user.core.toggleterm"
