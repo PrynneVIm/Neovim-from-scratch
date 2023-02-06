@@ -10,6 +10,7 @@ local servers = {
 	"clangd",
 	"gopls",
   "bufls",
+  "dockerls",
 }
 
 local settings = {
