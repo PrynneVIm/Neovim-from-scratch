@@ -58,12 +58,10 @@ return packer.startup(function(use)
 	use {"folke/which-key.nvim"}
 
 	-- Colorschemes
-  use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
   -- use "lunarvim/darkplus.nvim"
-  use "sainnhe/everforest"
-  use "NLKNguyen/papercolor-theme"
-  use "Mofiqul/vscode.nvim"
-  use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
+  -- use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
+  use 'martinsione/darkplus.nvim'
+  use 'navarasu/onedark.nvim'
 
 	-- Cmp 
   use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
