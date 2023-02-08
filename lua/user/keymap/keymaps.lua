@@ -59,6 +59,9 @@ keymap('n', '<leader><leader>d', '<cmd>DBUIToggle<cr>', opts)
 -- 快速分屏
 keymap('n', "<leader>\\", '<cmd>vs<cr>', opts)
 
+-- 翻译
+keymap('n', "<leader>tsl", '<cmd>TranslateW<cr>', opts)
+
 -- TagbarToggle
 -- keymap('n', '<F8>', ":TagbarToggle<CR>", opts)
 
