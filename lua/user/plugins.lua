@@ -180,6 +180,19 @@ return packer.startup(function(use)
     requires = { {"nvim-lua/plenary.nvim"} }
   }
 
+  -- Noice
+  use({
+    "folke/noice.nvim",
+    requires = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+      }
+  })
+
   -- GitHub Copilot
   use "github/copilot.vim"
   -- use { "zbirenbaum/copilot.lua" }
@@ -212,10 +225,10 @@ return packer.startup(function(use)
 			-- Read the following section and add what you need
 		end
 	}
-  -- use {
-  --   'crusj/structrue-go.nvim',
-  --   branch = "main",
-  -- }
+  use {
+    'crusj/structrue-go.nvim',
+    branch = "main",
+  }
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
