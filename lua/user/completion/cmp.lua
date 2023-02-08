@@ -44,7 +44,7 @@ local kind_icons = {
   TypeParameter = "",
   Copilot = "",
 }
--- find more here: https://www.nerdfonts.com/cheat-sheet
+-- find more icon here: https://www.nerdfonts.com/cheat-sheet
 
 -- 设置LSP颜色
 vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
