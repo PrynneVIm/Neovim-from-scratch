@@ -95,7 +95,6 @@ local mappings = {
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
-  ["x"] = { "<cmd>TranslateW<cr>", "Translate" },
 
   d = {
     name = "Debugger",
@@ -225,6 +224,15 @@ local mappings = {
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
     s = { "<cmd>lua _POWERSHELL_TOGGLE()<cr>", "PowerShell" },
   },
+
+  x = {
+    name = "Trouble",
+    x = { "<cmd>TroubleToggle<cr>", "Trouble Toggle" },
+    w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Workspace Diagnostics" },
+    d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Document Diagnostics" },
+    l = { "<cmd>TroubleToggle loclist<cr>", "Loclist" },
+    q = { "<cmd>TroubleToggle quickfix<cr>", "Quickfix" },
+  }
 }
 
 which_key.setup(setup)
