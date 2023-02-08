@@ -60,7 +60,8 @@ return packer.startup(function(use)
 	-- Colorschemes
   -- use "lunarvim/darkplus.nvim"
   -- use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
-  use 'martinsione/darkplus.nvim'
+  -- use 'martinsione/darkplus.nvim'
+  use "PrynneVIm/darkplus.nvim"
   use 'navarasu/onedark.nvim'
 
 	-- Cmp 
@@ -211,6 +212,10 @@ return packer.startup(function(use)
 			-- Read the following section and add what you need
 		end
 	}
+  -- use {
+  --   'crusj/structrue-go.nvim',
+  --   branch = "main",
+  -- }
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
