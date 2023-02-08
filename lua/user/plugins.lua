@@ -160,6 +160,12 @@ return packer.startup(function(use)
   -- 多光标操作
   use "mg979/vim-visual-multi"
 
+  -- 类似vscode的问题展示
+  use {
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons",
+  }
+
   -- TODO list
   use {
     "folke/todo-comments.nvim",
