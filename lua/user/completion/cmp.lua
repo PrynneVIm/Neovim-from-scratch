@@ -46,11 +46,6 @@ local kind_icons = {
 }
 -- find more icon here: https://www.nerdfonts.com/cheat-sheet
 
--- 设置LSP颜色
-vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
-vim.api.nvim_set_hl(0, "CmpItemKindSnippet", {fg ="#FFA500"})
-vim.api.nvim_set_hl(0, "CmpItemKindKeyword", {fg ="#EE82EE"})
-
 cmp.setup {
   snippet = {
     expand = function(args)
