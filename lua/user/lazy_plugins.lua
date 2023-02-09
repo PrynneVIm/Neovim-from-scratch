@@ -11,14 +11,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Autocommand that reloads neovim whenever you save the plugins.lua file
--- vim.cmd([[
---   augroup packer_user_config
---     autocmd!
---     autocmd BufWritePost plugins.lua source <afile> | PackerSync
---   augroup end
--- ]])
-
 -- Use a protected call so we don't error out on first use
 local status_ok, lazy = pcall(require, "lazy")
 if not status_ok then
@@ -26,6 +18,7 @@ if not status_ok then
 end
 
 vim.g.mapleader = " " -- make sure to set `mapleader` before lazy so your mappings are correct
+vim.g.maplocalleader = " "
 
 -- Install your plugins here
 lazy.setup({
@@ -64,7 +57,13 @@ lazy.setup({
   { "hrsh7th/cmp-calc" },
   { "octaltree/cmp-look" },
   -- use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
-  {'tzachar/cmp-tabnine', after = "nvim-cmp", run='powershell ./install.ps1', requires = 'hrsh7th/nvim-cmp'},
+  { 'tzachar/cmp-tabnine',
+    dependencies = {
+      "nvim-cmp",
+      "hrsh7th/nvim-cmp"
+    },
+    build='powershell ./install.ps1'
+  },
   -- use {
   --   "zbirenbaum/copilot-cmp",
   --   after = { "copilot.lua" },
