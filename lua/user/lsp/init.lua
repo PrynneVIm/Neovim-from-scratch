@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 require "user.lsp.mason"
+-- require "user.lsp.settings.java"
 require("user.lsp.handlers").setup()
 require "user.lsp.null-ls"
 require"fidget".setup{}
