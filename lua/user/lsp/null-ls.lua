@@ -14,8 +14,13 @@ null_ls.setup({
 		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-    diagnostics.eslint,
+		formatting.yamlfmt,
+		-- 通过echo executable("eslint") 查看是否安装了eslint
+		-- 如果为0则没有安装 \
+		-- 通过npm install -g eslint 安装
+		diagnostics.eslint,
+		diagnostics.buf,
 		null_ls.builtins.code_actions.gitsigns,
-    -- diagnostics.flake8
+		-- diagnostics.flake8
 	},
 })
