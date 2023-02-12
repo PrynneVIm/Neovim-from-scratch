@@ -59,6 +59,9 @@ keymap('n', '<leader><leader>d', '<cmd>DBUIToggle<cr>', opts)
 -- 快速分屏
 keymap('n', "<leader>\\", '<cmd>vs<cr>', opts)
 
+-- 快速保存
+keymap('n', "<C-s>", '<cmd>w!<cr>', opts)
+
 -- 翻译
 keymap('n', "<leader>tc", '<cmd>TranslateW<cr>', opts)
 
