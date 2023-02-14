@@ -104,29 +104,17 @@ return packer.startup(function(use)
   use {
     'phaazon/hop.nvim',
     branch = 'v2', -- optional but strongly recommended
-    config = function()
-      -- you can configure Hop the way you like here; see :h hop-config
-      require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
-    end
   }
 
   -- 十六进制颜色高亮
   use {
     "norcalli/nvim-colorizer.lua",
-    config = function()
-      require'colorizer'.setup()
-    end
   }
 
   -- 快速更改分隔符
   use({
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
-    config = function()
-      require("nvim-surround").setup({
-          -- Configuration here, or leave empty to use defaults
-      })
-    end
   })
 
   -- markdown
