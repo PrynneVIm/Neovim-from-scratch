@@ -192,6 +192,16 @@ return packer.startup(function(use)
   use "github/copilot.vim"
   -- use { "zbirenbaum/copilot.lua" }
 
+  -- ChatGPT
+  use({
+    "jackMort/ChatGPT.nvim",
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
+  })
+
   -- debugger
   use 'mfussenegger/nvim-dap'
   use "theHamsta/nvim-dap-virtual-text"
