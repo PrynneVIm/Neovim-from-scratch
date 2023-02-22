@@ -7,4 +7,5 @@ require "user.lsp.mason"
 -- require "user.lsp.settings.java"
 require("user.lsp.handlers").setup()
 require "user.lsp.null-ls"
-require"fidget".setup{}
+-- lsp加载进度ui
+-- require"fidget".setup{}
