@@ -12,7 +12,7 @@ local servers = {
   "bufls",
   "dockerls",
   -- "marksman",
-  "sqlls",
+  -- "sqlls",
 }
 
 local settings = {
