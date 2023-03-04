@@ -185,8 +185,8 @@ return packer.startup(function(use)
   })
 
   -- GitHub Copilot
-  use "github/copilot.vim"
-  -- use { "zbirenbaum/copilot.lua" }
+  -- use "github/copilot.vim"
+  use { "zbirenbaum/copilot.lua" }
 
   -- ChatGPT
   use({
