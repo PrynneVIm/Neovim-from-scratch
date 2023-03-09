@@ -4,7 +4,30 @@ if not status_ok then
 end
 
 configs.setup({
-  ensure_installed = { "bash", "c", "cpp", "javascript", "tsx", "html", "json", "lua", "python", "typescript", "css", "java", "yaml", "markdown", "markdown_inline", "go", "proto", "dockerfile", "regex", }, -- one of "all" or a list of languages
+	ensure_installed = {
+		"bash",
+		"c",
+		"cpp",
+		"javascript",
+		"tsx",
+		"html",
+		"json",
+		"lua",
+		"python",
+		"typescript",
+		"css",
+		"java",
+		"yaml",
+		"markdown",
+		"markdown_inline",
+		"go",
+		"gomod",
+		-- "gosum",
+		"gowork",
+		"proto",
+		"dockerfile",
+		"regex",
+	}, -- one of "all" or a list of languages
 	ignore_install = { "phpdoc" }, -- List of parsers to ignore installing
 	highlight = {
 		enable = true, -- false will disable the whole extension
@@ -28,16 +51,16 @@ configs.setup({
 		updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
 		persist_queries = false, -- Whether the query persists across vim sessions
 		keybindings = {
-		  toggle_query_editor = 'o',
-		  toggle_hl_groups = 'i',
-		  toggle_injected_languages = 't',
-		  toggle_anonymous_nodes = 'a',
-		  toggle_language_display = 'I',
-		  focus_language = 'f',
-		  unfocus_language = 'F',
-		  update = 'R',
-		  goto_node = '<cr>',
-		  show_help = '?',
+			toggle_query_editor = "o",
+			toggle_hl_groups = "i",
+			toggle_injected_languages = "t",
+			toggle_anonymous_nodes = "a",
+			toggle_language_display = "I",
+			focus_language = "f",
+			unfocus_language = "F",
+			update = "R",
+			goto_node = "<cr>",
+			show_help = "?",
 		},
-	}
+	},
 })
