@@ -15,6 +15,14 @@ null_ls.setup({
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
 		formatting.yamlfmt,
+
+    -- go formatting
+    formatting.gofmt,
+    -- formatting.gofumpt,
+    formatting.goimports,
+    -- formatting.goimports_reviser,
+    -- formatting.golines,
+
 		-- 通过echo executable("eslint") 查看是否安装了eslint
 		-- 如果为0则没有安装 \
 		-- 通过npm install -g eslint 安装
