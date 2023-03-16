@@ -64,6 +64,7 @@ keymap('n', "<C-s>", '<cmd>w!<cr>', opts)
 
 -- 翻译
 keymap('n', "<leader>tc", '<cmd>TranslateW<cr>', opts)
+keymap('v', "<leader>tc", '<cmd>TranslateW<cr>', opts)
 
 -- TagbarToggle
 -- keymap('n', '<F8>', ":TagbarToggle<CR>", opts)
