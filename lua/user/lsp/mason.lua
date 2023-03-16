@@ -7,7 +7,7 @@ local servers = {
 	"bashls",
 	"jsonls",
 	"yamlls",
-	"clangd",
+	-- "clangd", -- 安装这个会找不到头文件 要手动配置
 	"gopls",
   "bufls",
   "dockerls",
