@@ -27,7 +27,7 @@ null_ls.setup({
 		-- 如果为0则没有安装 \
 		-- 通过npm install -g eslint 安装
 		diagnostics.eslint,
-		diagnostics.buf,
+		-- diagnostics.buf,
 		null_ls.builtins.code_actions.gitsigns,
 		-- diagnostics.flake8
 	},
