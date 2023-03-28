@@ -15,7 +15,8 @@ local function config_dapi_and_sign()
       numhl = "",
     },
     stopped = {
-      text = "⭐️",
+      -- text = "⭐️",
+      text = "",
       texthl = "LspDiagnosticsSignInformation",
       linehl = "DiagnosticUnderlineInfo",
       numhl = "LspDiagnosticsSignInformation",
@@ -69,7 +70,7 @@ local function config_debuggers()
   -- require("user.dap.dap-cpp")
   -- require("user.dap.di-go")
 
-  -- require("user.dap.dap-cpp")
+  require("user.debug.dap-cpp")
   require("user.debug.dap-go")
   -- require("user.dap.dap-python")
   -- require("user.dap.dap-lua")
