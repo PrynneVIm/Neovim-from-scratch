@@ -46,7 +46,8 @@ configs.setup({
 		-- termcolors = {} -- table of colour name strings
 	},
 	playground = {
-		enable = true,
+    -- 开启会报错
+		enable = false,
 		disable = {},
 		updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
 		persist_queries = false, -- Whether the query persists across vim sessions
