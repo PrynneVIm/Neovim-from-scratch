@@ -7,12 +7,13 @@ local servers = {
 	"bashls",
 	"jsonls",
 	"yamlls",
-	"clangd", -- 安装这个会找不到头文件 要手动配置
+	-- "clangd", -- 安装这个会找不到头文件 要手动配置
 	"gopls",
   "bufls",
   "dockerls",
   -- "marksman",
   -- "sqlls",
+  "rust_analyzer",
 }
 
 local settings = {
