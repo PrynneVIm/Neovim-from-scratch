@@ -13,7 +13,7 @@ local servers = {
   "dockerls",
   -- "marksman",
   -- "sqlls",
-  "rust_analyzer",
+  -- "rust_analyzer", -- 不需要手动设置,开启会引发冲突(conflict)
 }
 
 local settings = {
