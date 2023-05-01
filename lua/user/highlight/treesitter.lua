@@ -27,6 +27,7 @@ configs.setup({
 		"proto",
 		"dockerfile",
 		"regex",
+    "rust"
 	}, -- one of "all" or a list of languages
 	ignore_install = { "phpdoc" }, -- List of parsers to ignore installing
 	highlight = {
