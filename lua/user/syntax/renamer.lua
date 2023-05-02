@@ -1,6 +1,11 @@
 local mappings_utils = require("renamer.mappings.utils")
 
-require("renamer").setup({
+local status_ok, renamer = pcall(require, "renamer")
+if not status_ok then
+  return
+end
+
+renamer.setup({
 	-- The popup title, shown if `border` is true
 	title = "Rename",
 	-- The padding around the popup content
