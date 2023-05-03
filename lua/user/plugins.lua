@@ -22,12 +22,12 @@ vim.g.maplocalleader = " "
 
 -- Install your plugins here
 lazy.setup({
-	{ "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" }, -- Useful lua functions used by lots of plugins
+	{ "nvim-lua/plenary.nvim" }, -- commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" -- Useful lua functions used by lots of plugins
 	{ "windwp/nvim-autopairs", commit = "4fc96c8f3df89b6d23e5092d31c866c53a346347" }, -- Autopairs, integrates with both cmp and treesitter
 	{ "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" },
 	{ "JoosepAlviste/nvim-ts-context-commentstring", commit = "4d3a68c41a53add8804f471fcc49bb398fe8de08" },
-  { "nvim-tree/nvim-web-devicons" }, 	-- { "kyazdani42/nvim-web-devicons", commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352" },
-	{ "nvim-tree/nvim-tree.lua" }, 	-- { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" },
+	{ "nvim-tree/nvim-web-devicons" }, -- { "kyazdani42/nvim-web-devicons", commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352" },
+	{ "nvim-tree/nvim-tree.lua" }, -- { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" },
 	{ "akinsho/bufferline.nvim", commit = "83bf4dc7bff642e145c8b4547aa596803a8b4dc4" },
 	{ "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" },
 	{ "nvim-lualine/lualine.nvim", commit = "a52f078026b27694d2290e34efa61a6e4a690621" },
@@ -136,7 +136,7 @@ lazy.setup({
 	"preservim/tagbar",
 
 	-- Git
-	"lewis6991/gitsigns.nvim",  -- { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" },
+	"lewis6991/gitsigns.nvim", -- { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" },
 	{ "sindrets/diffview.nvim", dependencies = "nvim-lua/plenary.nvim" },
 
 	-- Renamer
@@ -197,6 +197,6 @@ lazy.setup({
 	{ "fatih/vim-go", build = ":GoUpdateBinaries" },
 	{ "crusj/structrue-go.nvim", branch = "main" },
 
-  -- Rust
-  'simrat39/rust-tools.nvim',
+	-- Rust
+	"simrat39/rust-tools.nvim",
 })
