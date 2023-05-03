@@ -136,7 +136,7 @@ lazy.setup({
 	"preservim/tagbar",
 
 	-- Git
-	{ "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" },
+	"lewis6991/gitsigns.nvim",  -- { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" },
 	{ "sindrets/diffview.nvim", dependencies = "nvim-lua/plenary.nvim" },
 
 	-- Renamer
