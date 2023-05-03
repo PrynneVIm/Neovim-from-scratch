@@ -1,5 +1,5 @@
 local servers = {
-	"sumneko_lua",
+  "lua_ls",
 	"cssls",
 	"html",
 	-- "tsserver",
@@ -7,7 +7,7 @@ local servers = {
 	"bashls",
 	"jsonls",
 	"yamlls",
-	-- "clangd", -- 安装这个会找不到头文件 要手动配置
+	"clangd",
 	"gopls",
   "bufls",
   "dockerls",
