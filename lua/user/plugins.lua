@@ -51,11 +51,7 @@ lazy.setup({
 	{ "hrsh7th/cmp-emoji" },
 	{ "hrsh7th/cmp-calc" },
 	{ "octaltree/cmp-look" },
-	{
-		"tzachar/cmp-tabnine",
-		build = "./install.sh",
-		dependencies = "hrsh7th/nvim-cmp",
-	},
+	{ "tzachar/cmp-tabnine", build = "./install.sh", dependencies = "hrsh7th/nvim-cmp" }, -- Windows需要手动安装
 	"f3fora/cmp-spell",
 
 	-- Snippets
