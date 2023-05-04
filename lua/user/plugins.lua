@@ -73,7 +73,11 @@ lazy.setup({
 	-- "folke/neodev.nvim",
 
 	-- Telescope
-	{ "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" },
+	{
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.1",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
 	{ "LinArcX/telescope-env.nvim" },
 
 	-- 快速定位单词和某一行
