@@ -66,6 +66,9 @@ keymap('n', "<C-s>", '<cmd>w!<cr>', opts)
 keymap('n', "<leader>tc", '<cmd>TranslateW<cr>', opts)
 keymap('v', "<leader>tc", '<cmd>TranslateW<cr>', opts)
 
+-- Undo Tree
+keymap('n', "<leader><F5>", '<cmd>UndotreeToggle<cr>', opts)
+
 -- TagbarToggle
 -- keymap('n', '<F8>', ":TagbarToggle<CR>", opts)
 
