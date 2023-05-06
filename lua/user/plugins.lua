@@ -131,6 +131,9 @@ lazy.setup({
 		dependencies = "nvim-lua/plenary.nvim",
 	},
 
+  -- Undo tree
+  "mbbill/undotree",
+
 	-- Tagbar
 	"preservim/tagbar",
 
