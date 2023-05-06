@@ -197,7 +197,7 @@ lazy.setup({
 
 	-- Go
 	{ "fatih/vim-go", build = ":GoUpdateBinaries" },
-	{ "crusj/structrue-go.nvim", branch = "main" },
+	{ "crusj/structrue-go.nvim", branch = "main" }, -- 查看官方文档安装
 
 	-- Rust
 	"simrat39/rust-tools.nvim",
