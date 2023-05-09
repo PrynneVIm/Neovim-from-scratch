@@ -198,6 +198,13 @@ lazy.setup({
 	-- Go
 	{ "fatih/vim-go", build = ":GoUpdateBinaries" },
 	{ "crusj/structrue-go.nvim", branch = "main" }, -- 查看官方文档安装
+  { "BYT0723/goctl.nvim",
+    build = ":GoctlUpgrade",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
+  },
 
 	-- Rust
 	"simrat39/rust-tools.nvim",
