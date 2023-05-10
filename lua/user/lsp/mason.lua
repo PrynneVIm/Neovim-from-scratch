@@ -9,7 +9,7 @@ local servers = {
 	"yamlls",
 	"clangd",
 	"gopls",
-  "bufls",
+  -- "bufls",
   "dockerls",
   -- "marksman",
   -- "sqlls",
