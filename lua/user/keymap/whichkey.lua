@@ -223,6 +223,9 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
     s = { "<cmd>lua _POWERSHELL_TOGGLE()<cr>", "PowerShell" },
+
+    -- 翻译
+    w = { "<cmd>TranslateW<cr>", "TranslateW" },
   },
 
   x = {

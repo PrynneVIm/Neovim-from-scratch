@@ -63,8 +63,8 @@ keymap('n', "<leader>\\", '<cmd>vs<cr>', opts)
 keymap('n', "<C-s>", '<cmd>w!<cr>', opts)
 
 -- 翻译
-keymap('n', "<leader>tc", '<cmd>TranslateW<cr>', opts)
-keymap('v', "<leader>tc", '<cmd>TranslateW<cr>', opts)
+-- keymap('n', "<leader>tw", '<cmd>TranslateW<cr>', opts)
+keymap('v', "<leader>tw", '<cmd>TranslateW<cr>', opts)
 
 -- Undo Tree
 keymap('n', "<leader><F5>", '<cmd>UndotreeToggle<cr>', opts)
