@@ -22,6 +22,7 @@ null_ls.setup({
     formatting.goimports,
     -- formatting.goimports_reviser,
     -- formatting.golines,
+    formatting.buf,
 
 		-- 通过echo executable("eslint") 查看是否安装了eslint
 		-- 如果为0则没有安装 \
