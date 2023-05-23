@@ -64,17 +64,17 @@ copilot.setup({
 
 
 
-local copilotCmp_status_ok, copilotCmp = pcall(require, "copilot_cmp")
-if not copilotCmp_status_ok then
-	return
-end
+-- local copilotCmp_status_ok, copilotCmp = pcall(require, "copilot_cmp")
+-- if not copilotCmp_status_ok then
+-- 	return
+-- end
 
 -- -- TODO: copilot cmp提示 输出格式不正确
-copilotCmp.setup {
+-- copilotCmp.setup {
   -- method = "getCompletionsCycling",
   -- formatters = {
   --   label = require("copilot_cmp.format").format_label_text,
   --   insert_text = require("copilot_cmp.format").format_insert_text,
   --   preview = require("copilot_cmp.format").deindent,
   -- },
-}
+-- }
