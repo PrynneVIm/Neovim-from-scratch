@@ -53,7 +53,7 @@ lazy.setup({
 	{ "octaltree/cmp-look" },
 	{ "tzachar/cmp-tabnine", build = "./install.sh", dependencies = "hrsh7th/nvim-cmp" }, -- Windows需要手动安装
 	"f3fora/cmp-spell",
-  { "zbirenbaum/copilot-cmp" },
+  -- { "zbirenbaum/copilot-cmp" },
 
 	-- Snippets
 	{ "L3MON4D3/LuaSnip", commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" }, --snippet engine
@@ -163,8 +163,9 @@ lazy.setup({
 	},
 
 	-- GitHub Copilot
-	-- "github/copilot.vim",
-	{ "zbirenbaum/copilot.lua" },
+	"github/copilot.vim",
+	-- { "zbirenbaum/copilot.lua" },
+  -- "Exafunction/codeium.vim",
 
 	-- ChatGPT
 	{
