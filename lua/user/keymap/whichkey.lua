@@ -98,32 +98,33 @@ local mappings = {
 
   d = {
     name = "Debugger",
-    b = { "<cmd>lua require'dap'.toggle_breakpoint()<CR>", "Breakpoint" },
-    B = { "<cmd>lua require'dap'.list_breakpoints()<CR>", "Breakpoint List" },
+    b = { "<cmd>lua require'dap'.toggle_breakpoint()<CR>", "设置断点" },
+    B = { "<cmd>lua require'dap'.list_breakpoints()<CR>", "查看所有断点" },
     -- B = { "<cmd>lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>", "设置断点状态?" },
-    d = { "<cmd>lua require'dap'.continue()<CR>", "Start" },
-    e = { "<cmd>lua require'dap'.terminate()<CR>", "Terminate" },
-    E = { "<cmd>lua require'dap'.run_last()<CR>", "Run Last" },
-    i = { "<cmd>lua require'dapui'.eval()<CR>", "View Variable Information" },
+    d = { "<cmd>lua require'dap'.continue()<CR>", "开始调试" },
+    e = { "<cmd>lua require'dap'.terminate()<CR>", "终止调试" },
+    E = { "<cmd>lua require'dap'.run_last()<CR>", "运行到末尾" },
+    i = { "<cmd>lua require'dapui'.eval()<CR>", "查看变量信息" },
 
-    j = { "<cmd>lua require'dap'.step_over()<CR>", "StepOver" },
-    k = { "<cmd>lua require'dap'.step_out()<CR>", "StepOut" },
-    l = { "<cmd>lua require'dap'.step_into()<CR>", "StepInto" },
-    r = { "<cmd>lua require'dap'.run_to_cursor()<CR>", "Run To Cursor" },
-    o = { "<cmd>lua require'dap'.repl.open()<CR>", "Open Panel" },
+    j = { "<cmd>lua require'dap'.step_over()<CR>", "stepOver" },
+    k = { "<cmd>lua require'dap'.step_out()<CR>", "stepOut" },
+    l = { "<cmd>lua require'dap'.step_into()<CR>", "stepInto" },
+    r = { "<cmd>lua require'dap'.run_to_cursor()<CR>", "运行到鼠标所在位置" },
+    o = { "<cmd>lua require'dap'.repl.open()<CR>", "打开调试面板" },
     -- D = { "<Plug>VimspectorDisassemble", "打开反汇编窗口" },
 
     t = {
       name = "Test",
-      t = { "<cmd>lua require('neotest').summary.toggle()<CR>", "Test Case" },
+      t = { "<cmd>lua require('neotest').summary.toggle()<CR>", "打开测试界面" },
       r = { "<cmd>lua require('neotest').run.run()<CR>", "Test Function" },
       f = { "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>", "Test File" },
-      o = { "<cmd>lua require('neotest').output.open()<CR>", "Test Result" },
+      o = { "<cmd>lua require('neotest').output.open()<CR>", "显示执行结果" },
       -- ds = { "<cmd>lua require('neotest').diagnostic.show()<CR>", "显示诊断槽" },
       -- dh = { "<cmd>lua require('neotest').diagnostic.hide()<CR>", "隐藏诊断槽" },
       -- d = { "<cmd>lua require('neotest').diagnostics.toggle()<CR>", "隐藏诊断槽" },
       -- s = { "<cmd>lua require('neotest').run.stop()<CR>", "停止最近的测试函数" },
     }
+
   },
 
   -- p = {
@@ -202,6 +203,7 @@ local mappings = {
   s = {
     name = "Search",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
+    d = { "<cmd>lua _LAZYDOCKER_TOGGLE()<CR>", "Lazydocker" },
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
     h = { "<cmd>Telescope help_tags<cr>", "Find Help" },
     M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
@@ -222,6 +224,9 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
     -- s = { "<cmd>lua _POWERSHELL_TOGGLE()<cr>", "PowerShell" },
+
+    -- 翻译
+    w = { "<cmd>TranslateW<cr>", "TranslateW" },
   },
 
   x = {
@@ -231,17 +236,6 @@ local mappings = {
     d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Document Diagnostics" },
     l = { "<cmd>TroubleToggle loclist<cr>", "Loclist" },
     q = { "<cmd>TroubleToggle quickfix<cr>", "Quickfix" },
-  },
-
-  k ={
-    name = "Key Maps",
-    d = { "<cmd>lua _LAZYDOCKER_TOGGLE()<CR>", "Lazydocker" },
-    D = { "<cmd>DBUIToggle<cr>", "Database"},
-    s = { "<cmd>HopWord<cr>", "Hop Word" },
-    t = { "<cmd>TagbarToggle<cr>", "Tagbar" },
-    T = { "<cmd>lua require('neotest').summary.toggle()<CR>", "Test Case"},
-    u = { "<cmd>UndotreeToggle<cr>", "Undotree"},
-    w = { "<cmd>TranslateW<cr>", "Translate Word" },
   }
 }
 

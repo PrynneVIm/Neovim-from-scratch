@@ -24,8 +24,8 @@ vim.g.maplocalleader = " "
 lazy.setup({
 	{ "nvim-lua/plenary.nvim" }, -- commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" -- Useful lua functions used by lots of plugins
 	{ "windwp/nvim-autopairs" }, -- commit = "4fc96c8f3df89b6d23e5092d31c866c53a346347" -- Autopairs, integrates with both cmp and treesitter
-	{ "numToStr/Comment.nvim" }, -- commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67"
-	{ "JoosepAlviste/nvim-ts-context-commentstring" }, --commit = "4d3a68c41a53add8804f471fcc49bb398fe8de08"
+	{ "numToStr/Comment.nvim" }, -- commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" 
+	{ "JoosepAlviste/nvim-ts-context-commentstring" }, -- commit = "4d3a68c41a53add8804f471fcc49bb398fe8de08"
 	{ "nvim-tree/nvim-web-devicons" }, -- { "kyazdani42/nvim-web-devicons", commit = "563f3635c2d8a7be7933b9e547f7c178ba0d4352" },
 	{ "nvim-tree/nvim-tree.lua" }, -- { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" },
 	{ "akinsho/bufferline.nvim" }, -- { "akinsho/bufferline.nvim", commit = "83bf4dc7bff642e145c8b4547aa596803a8b4dc4" },
@@ -33,9 +33,9 @@ lazy.setup({
 	{ "moll/vim-bbye" }, -- commit = "25ef93ac5a87526111f43e5110675032dbcacf56"
 	{ "nvim-lualine/lualine.nvim" }, -- { "nvim-lualine/lualine.nvim", commit = "a52f078026b27694d2290e34efa61a6e4a690621" },
 	{ "ahmedkhalf/project.nvim" }, -- commit = "628de7e433dd503e782831fe150bb750e56e55d6"
-	{ "lewis6991/impatient.nvim" }, --	{ "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" },
+	{ "lewis6991/impatient.nvim" },-- commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6"
 	{ "lukas-reineke/indent-blankline.nvim" }, -- commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6"
-	{ "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" },
+	{ "goolord/alpha-nvim" }, -- commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31"
 	{ "folke/which-key.nvim" },
 
 	-- Colorschemes
@@ -53,18 +53,17 @@ lazy.setup({
 	{ "octaltree/cmp-look" },
 	{ "tzachar/cmp-tabnine", build = "./install.sh", dependencies = "hrsh7th/nvim-cmp" }, -- Windows需要手动安装
 	"f3fora/cmp-spell",
-  -- { "zbirenbaum/copilot-cmp" },
 
 	-- Snippets
-	{ "L3MON4D3/LuaSnip", }, -- commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" --snippet engine
+	{ "L3MON4D3/LuaSnip" }, -- commit = "8f8d493e7836f2697df878ef9c128337cbf2bb84" --snippet engine
 	{ "rafamadriz/friendly-snippets" }, -- commit = "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" -- a bunch of snippets to use
 
 	-- LSP
 	"neovim/nvim-lspconfig", -- { "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" }, -- enable LSP
-	{ "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12" }, -- simple to use language server installer
-	{ "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" },
-	{ "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" }, -- for formatters and linters
-	{ "RRethy/vim-illuminate", commit = "a2e8476af3f3e993bb0d6477438aad3096512e42" },
+	{ "williamboman/mason.nvim" }, -- commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12" -- simple to use language server installer
+	{ "williamboman/mason-lspconfig.nvim" }, -- commit = "0051870dd728f4988110a1b2d47f4a4510213e31" 
+	{ "jose-elias-alvarez/null-ls.nvim"  }, -- commit = "c0c19f32b614b3921e17886c541c13a72748d450" -- for formatters and linters
+	{ "RRethy/vim-illuminate" }, -- commit = "a2e8476af3f3e993bb0d6477438aad3096512e42"
 	-- "j-hui/fidget.nvim", -- lsp加载进度ui
 	-- "mfussenegger/nvim-jdtls", -- java lsp
 	-- "folke/neodev.nvim",
@@ -164,9 +163,8 @@ lazy.setup({
 	},
 
 	-- GitHub Copilot
-	"github/copilot.vim", --查看官方文档安装
+	"github/copilot.vim",
 	-- { "zbirenbaum/copilot.lua" },
-  -- "Exafunction/codeium.vim",
 
 	-- ChatGPT
 	{

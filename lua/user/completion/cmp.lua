@@ -15,12 +15,6 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
-local has_words_before = function()
-  if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then return false end
-  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-  return col ~= 0 and vim.api.nvim_buf_get_text(0, line-1, 0, line-1, col, {})[1]:match("^%s*$") == nil
-end
-
 --   פּ ﯟ   some other good icons
 local kind_icons = {
   Text = "",
@@ -80,8 +74,6 @@ cmp.setup {
       elseif luasnip.expand_or_jumpable() then
         luasnip.expand_or_jump()
       elseif check_backspace() then
-        fallback()
-      elseif has_words_before() then
         fallback()
       else
         fallback()

@@ -10,6 +10,7 @@ vim.g.copilot_filetypes = { xml = false }
 vim.g.copilot_assume_mapped = true
 vim.api.nvim_set_keymap("!", "<C-]>", 'copilot#Accept("<CR>")', { silent = true, expr = true, noremap=true })
 
+
 --------------------------以下是copilot.lua的配置-----------------------------
 
 -- local status_ok, copilot = pcall(require, "copilot")
@@ -68,11 +69,12 @@ vim.api.nvim_set_keymap("!", "<C-]>", 'copilot#Accept("<CR>")', { silent = true,
 -- 	return
 -- end
 
+-- -- TODO: copilot cmp提示 输出格式不正确
 -- copilotCmp.setup {
-  -- method = "getCompletionsCycling",
-  -- formatters = {
-  --   label = require("copilot_cmp.format").format_label_text,
-  --   insert_text = require("copilot_cmp.format").format_insert_text,
-  --   preview = require("copilot_cmp.format").deindent,
-  -- },
+--   method = "getCompletionsCycling",
+--   formatters = {
+--     label = require("copilot_cmp.format").format_label_text,
+--     insert_text = require("copilot_cmp.format").format_insert_text,
+--     preview = require("copilot_cmp.format").deindent,
+--   },
 -- }
