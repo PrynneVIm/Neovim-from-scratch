@@ -166,17 +166,6 @@ lazy.setup({
 	"github/copilot.vim",
 	-- { "zbirenbaum/copilot.lua" },
 
-	-- ChatGPT
-	{
-		"jackMort/ChatGPT.nvim",
-		event = "VeryLazy",
-		dependencies = {
-			"MunifTanjim/nui.nvim",
-			"nvim-lua/plenary.nvim",
-			"nvim-telescope/telescope.nvim",
-		},
-	},
-
 	-- debugger
 	"mfussenegger/nvim-dap",
 	"theHamsta/nvim-dap-virtual-text",
@@ -199,13 +188,6 @@ lazy.setup({
 	-- Go
 	{ "fatih/vim-go", build = ":GoUpdateBinaries" },
 	{ "crusj/structrue-go.nvim", branch = "main" }, -- 查看官方文档安装
-  { "BYT0723/goctl.nvim",
-    build = ":GoctlUpgrade",
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-    }
-  },
 
 	-- Rust
 	"simrat39/rust-tools.nvim",
