@@ -72,7 +72,7 @@ local function config_debuggers()
 
   require("user.debug.dap-cpp")
   require("user.debug.dap-go")
-  -- require("user.dap.dap-python")
+  require("user.debug.dap-python")
   -- require("user.dap.dap-lua")
   -- require("user.dap.dap-cpp")
   -- require("config.dap.python").setup()
